@@ -12,6 +12,7 @@ app.use('/api', msgs);
 function getCookies(req) {
     if (req.headers.cookie == null) return {};
 
+
     const rawCookies = req.headers.cookie.split('; ');
     const parsedCookies = {};
 
